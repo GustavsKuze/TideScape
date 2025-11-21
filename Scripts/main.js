@@ -12,7 +12,7 @@ function createWindow() {
             nodeIntegration: true
         },
 
-        title: "TideScape",
+        title: "TimeScape",
         icon: path.join(__dirname, '..', 'Assets', 'icon.ico'),
     });
 
