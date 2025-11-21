@@ -14,6 +14,6 @@
   "author": "Gustavs Kuze",
   "license": "",
   "devDependencies": {
-    "electron": "^39.2.1"
+    "electron": "^39.2.3"
   }
 }

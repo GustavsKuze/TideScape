@@ -15,13 +15,20 @@
     <!-- Title Card -->
     <div id="titleCard">
         <img src="../Assets/icon.ico" alt="titleImage" class="titleImage">
-        <p class="titleCardLine1">TideScape</p>
-        <p class="titleCardLine2">Control Pannel</p>
+            <div id="titleCardText">
+            <p class="titleCardLine1">TimeScape</p>
+            <p class="titleCardLine2">Control Pannel</p>
+            </div>
     </div>
 
-    <!-- Wave Ripple Effect -->
-    <canvas id="rippleLayer"></canvas>
-    <script scr="waveRipple.js"></script>
+    <!-- Slicer Box -->
+    <div id="slicerSection">
+        <img src="../Assets/cut.png" alt="cutImage" class="cutImage">
+        <p id="slicerFilePath">No file selected :/</p>
+        <img src="../Assets/folder.png" alt="folderImage" class="folderImage">
+    </div>
+    
+    <script src="slicerManager.js"></script>
     
 </body>
 </html>
