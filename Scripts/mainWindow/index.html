@@ -2,7 +2,7 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>TideScape</title>
+    <title>TideScape - Main Page</title>
     <link rel="stylesheet" href="styles.css">
 
     <!-- Google Fonts -->
@@ -14,7 +14,7 @@
 <body>
     <!-- Title Card -->
     <div id="titleCard">
-        <img src="../Assets/icon.ico" alt="titleImage" class="titleImage">
+        <img src="../../Assets/icon.ico" alt="titleImage" class="titleImage">
             <div id="titleCardText">
             <p class="titleCardLine1">TimeScape</p>
             <p class="titleCardLine2">Control Pannel</p>
@@ -22,13 +22,14 @@
     </div>
 
     <!-- Slicer Box -->
-    <div id="slicerSection">
-        <img src="../Assets/cut.png" alt="cutImage" class="cutImage">
-        <p id="slicerFilePath">No file selected :/</p>
-        <img src="../Assets/folder.png" alt="folderImage" class="folderImage">
+    <div id="pagePicker">
+        <p class="pagePickerText">Control Options</p>
+
+            <div id="pageButtonsContainer">
+            <img src="../../Assets/cut.png" alt="cutImage" class="cutImage">
+            <img src="../../Assets/desktop.png" alt="monitorImage" class="monitorImage">
+            </div>
     </div>
-    
-    <script src="slicerManager.js"></script>
     
 </body>
 </html>

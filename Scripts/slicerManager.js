@@ -1,8 +1,8 @@
 document.getElementById('folderImage').addEventListener('click', async () => {
   const filePath = await window.electronAPI.openFileDialog();
   if (filePath) {
-    document.getElementById('file-path').textContent = filePath;
+    document.getElementById('slicerFilePath').textContent = filePath;
   } else {
-    document.getElementById('file-path').textContent = 'No file selected';
+    document.getElementById('slicerFilePath').textContent = 'No file selected';
   }
 });

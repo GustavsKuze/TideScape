@@ -2,21 +2,23 @@ const { app, BrowserWindow, ipcMain, dialog } = require('electron');
 const path = require('path');
 
 function createWindow() {
-    const win = new BrowserWindow({
-        width: 800,
-        height: 600,
+    const mainWindow = new BrowserWindow({
+        width: 600,
+        height: 400,
 
         frame: true,
 
         webPreferences: {
-            nodeIntegration: true
+            preload: path.join(__dirname, 'preload.js'),
+            contextIsolation: true,
+            nodeIntegration: false,
         },
 
         title: "TimeScape",
         icon: path.join(__dirname, '..', 'Assets', 'icon.ico'),
     });
 
-    win.loadFile('homeScreen.html');
+    mainWindow.loadFile(path.join(__dirname, 'MainWindow', 'index.html'));
 }
 
 app.whenReady().then(createWindow);
