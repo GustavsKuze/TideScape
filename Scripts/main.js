@@ -3,8 +3,8 @@ const path = require('path');
 
 function createWindow() {
     const mainWindow = new BrowserWindow({
-        width: 600,
-        height: 400,
+        width: 700,
+        height: 450,
 
         frame: true,
 
@@ -14,11 +14,15 @@ function createWindow() {
             nodeIntegration: false,
         },
 
+        menu: null,
+        resizable: false,
         title: "TimeScape",
         icon: path.join(__dirname, '..', 'Assets', 'icon.ico'),
     });
 
     mainWindow.loadFile(path.join(__dirname, 'MainWindow', 'index.html'));
+
+    mainWindow.webContents.executeJavaScript(`document.body.style.overflow = 'hidden';`);
 }
 
 app.whenReady().then(createWindow);

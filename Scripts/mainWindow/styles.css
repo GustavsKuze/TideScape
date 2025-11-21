@@ -33,43 +33,43 @@ img {
     transform: translateY(-32px);
 }
 
-.titleImage {
-   width: 96px;
-   height: 96px;
-   margin-right: 20px; 
-}
+    .titleImage {
+    width: 96px;
+    height: 96px;
+    margin-right: 20px; 
+    }
 
-.titleCardText {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-}
+    .titleCardText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 
-.titleCardLine1 {
-    position: relative;
-    margin-bottom: 5px;
+        .titleCardLine1 {
+            position: relative;
+            margin-bottom: 5px;
 
-    font-size: 48px;
-    font-family: 'Ubuntu', sans-serif;
-   
-    color: #ff8800;
-    -webkit-text-stroke: 1px #925800;
+            font-size: 48px;
+            font-family: 'Ubuntu', sans-serif;
+        
+            color: #ff8800;
+            -webkit-text-stroke: 1px #925800;
 
-    transform: translate(-8px,-8px);
-}
+            transform: translate(-8px,-8px);
+        }
 
-.titleCardLine2 {
-    position: relative;
-    margin-top: 0px;
+        .titleCardLine2 {
+            position: relative;
+            margin-top: 0px;
 
-    font-size: 32px;
-    font-family: 'Ubuntu', sans-serif;
-   
-    color: #ffc400;
-    -webkit-text-stroke: 1px #887400;
+            font-size: 32px;
+            font-family: 'Ubuntu', sans-serif;
+        
+            color: #ffc400;
+            -webkit-text-stroke: 1px #887400;
 
-    transform: translate(0px,-16px);
-}
+            transform: translate(0px,-16px);
+        }
 
 /* Slicer section */
 #pagePicker {
@@ -82,32 +82,140 @@ img {
     left: 0;
     width: 100%;
 
-    transform: translateY(-64px);
+    transform: translateY(-100px);
 }
 
 .pagePickerText {
     position: relative;
     margin-bottom: 5px;
 
-    font-size: 48px;
+    font-size: 40px;
     font-family: 'Ubuntu', sans-serif;
    
     color: #ff8800;
     -webkit-text-stroke: 1px #925800;
 }
 
-#pageButtonsContainer {
-    position: relative;
-    display: flex;
-    justify-content: center;
-}
+    #pageButtonsContainer {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 64px;
+    }
 
-.cutImage {
-    width: 128px;
-    height: 128px;
-}
+        #slicerContainer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-.monitorImage {
-    width: 128px;
-    height: 128px;
-}
+            .cutImage {
+                pointer-events: all;
+
+                width: 128px;
+                height: 128px;
+
+                transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+            }
+
+            .cutImage:hover {
+                pointer-events: all;
+
+                width: 144px;
+                height: 144px;
+                transform: rotate(10deg);
+                
+                transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+            }
+
+            .slicerText {
+                font-size: 24px;
+                font-family: 'Ubuntu', sans-serif;
+            
+                color: #ffc400;
+                transition: color 0.3s ease;
+            }
+
+            .cutImage:hover + .slicerText {
+                color: #ff8800;
+                transition: color 0.3s ease;
+            }
+
+        #displayContainer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .monitorImage {
+                pointer-events: all;
+
+                width: 128px;
+                height: 128px;
+
+                transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+            }
+
+            .monitorImage:hover {
+                pointer-events: all;
+
+                width: 144px;
+                height: 144px;
+                transform: rotate(10deg);
+                
+                transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+            }
+
+            .displayText {
+                font-size: 24px;
+                font-family: 'Ubuntu', sans-serif;
+            
+                color: #ffc400;
+                transition: color 0.3s ease;
+            }
+
+            .monitorImage:hover + .displayText {
+                color: #ff8800;
+                transition: color 0.3s ease;
+            }
+
+        #folderContainer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            .folderImage {
+                pointer-events: all;
+
+                width: 128px;
+                height: 128px;
+
+                transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+            }
+
+            .folderImage:hover {
+                pointer-events: all;
+
+                width: 144px;
+                height: 144px;
+                transform: rotate(10deg);
+                
+                transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+            }
+
+            .folderText {
+                font-size: 24px;
+                font-family: 'Ubuntu', sans-serif;
+            
+                color: #ffc400;
+                transition: color 0.3s ease;
+            }
+
+            .folderImage:hover + .folderText {
+                color: #ff8800;
+                transition: color 0.3s ease;
+            }
