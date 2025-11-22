@@ -1,3 +1,14 @@
+// Slicer Icon
+window.addEventListener('DOMContentLoaded', () => {
+  const folderImage = document.getElementById('cutImage');
+
+    folderImage.addEventListener('click', () => {
+      window.electronAPI.createSlicerWindow();
+    });
+});
+
+
+// Folder Icon
 window.addEventListener('DOMContentLoaded', () => {
   const folderImage = document.getElementById('folderImage');
   if (folderImage) {
