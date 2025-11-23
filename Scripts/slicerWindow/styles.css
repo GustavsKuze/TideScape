@@ -154,3 +154,54 @@ img {
 
         transition: color 0.3s ease, -webkit-text-stroke 0.3s ease, padding-left 0.3s ease, padding-right 0.3s ease, padding-top 0.3s ease, padding-bottom 0.3s ease;
     }
+
+
+/* Slicer Settings */
+#slicerSettingsContainer {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 32px;
+
+    width: 100%;   
+}
+
+/* None Picked */
+.unchosenTextBasic {
+    position: relative;
+    padding-left: 64px;
+    padding-right: 64px;
+    transform: translateY(-80px);    
+
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+
+    color: #ff8800;
+    transition: color 0.3s ease;
+}
+
+.basic:hover ~ .unchosenTextBasic {
+    color: #ffc400; 
+    transition: color 0.3s ease;
+}
+
+.unchosenTextComplex {
+    position: relative;
+    padding-left: 64px;
+    padding-right: 64px;
+    transform: translateY(-120px);
+
+    font-size: 22px;
+    font-family: 'Ubuntu', sans-serif;
+    text-align: center;
+
+    color: #ff8800;
+    transition: color 0.3s ease;
+}
+
+.complex:hover ~ .unchosenTextComplex {
+    color: #ffc400; 
+    transition: color 0.3s ease;
+}

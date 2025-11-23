@@ -30,7 +30,7 @@ function createMainWindow() {
 function createSlicerWindow() {
     const mainWindow = new BrowserWindow({
         width: 700,
-        height: 450,
+        height: 500,
 
         frame: true,
 
