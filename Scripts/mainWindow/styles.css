@@ -24,7 +24,7 @@ img {
 
 /* Main Page */
 #wholePage {
-  transition: transform 0.5s ease-in-out;
+  transition: transform 1s ease-in-out;
   transform: translateY(0);
   overflow-x: hidden; 
 }

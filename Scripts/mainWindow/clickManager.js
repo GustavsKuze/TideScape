@@ -32,19 +32,22 @@ function slicerIncreasePageHeight() {
 
 window.addEventListener('DOMContentLoaded', () => {
   const folderImage = document.getElementById('cutImage');
-  const wholePage = document.getElementById('wholePage'); // Make sure this exists
+  let wholePage = document.getElementById('wholePage'); // Ensure this exists
 
   folderImage.addEventListener('click', () => {
     // Animation
-    wholePage.style.transform = 'translateY(100vh)';
+    wholePage.style.transform = 'translateY(200vh)';
 
     setTimeout(() => {
       // Page Size Increase
-      window.electronAPI.resizeWindow(1000,1000);
+      window.electronAPI.resizeWindow(1000, 1000);
 
-      window.location.href = '../slicerWindow/index.html';
+      setTimeout(() => {
+        window.location.href = '../slicerWindow/index.html';
+      }, 750);
     }, 750);
   });
+
 });
 
 

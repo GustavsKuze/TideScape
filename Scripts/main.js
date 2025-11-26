@@ -33,7 +33,6 @@ function smoothResizeWindow(windowInstance, x, y) {
 
     // Adust Window
     windowInstance.setSize(nextX, nextY, true);
-    windowInstance.center();
 
     windowInstance.webContents.send('update-current-size', nextX, nextY);
     setTimeout(() => smoothResizeWindow(windowInstance, x, y), delay)
