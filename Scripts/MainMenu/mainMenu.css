@@ -1,0 +1,106 @@
+/* Title Card */
+#titleCard {
+    display: flex;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+
+    transform: translateY(-32px);
+}
+
+    #titleImage {
+    margin-right: 20px; 
+    }
+
+    #titleCardText {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+        #titleCardLine1 {
+            margin-bottom: 5px;
+            transform: translate(-8px,-8px);
+        }
+
+        #titleCardLine2 {
+            margin-top: 0px;
+            transform: translate(0px,-16px);
+        }
+
+
+/* Slicer section */
+#pagePicker {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    transform: translateY(-110px);
+}
+
+#pagePickerText {
+    margin-bottom: 5px;
+}
+
+    #pageButtonsContainer {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        gap: 64px;
+    }
+
+        #slicerContainer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+            #slicerText {
+                transition: color 0.3s ease;
+            }
+
+            #cutImage:hover + #slicerText {
+                color: #ff8800;
+                transition: color 0.3s ease;
+            }
+
+        #displayContainer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+            #displayText {
+                transition: color 0.3s ease;
+            }
+
+            #monitorImage:hover + #displayText {
+                color: #ff8800;
+                transition: color 0.3s ease;
+            }
+
+        #folderContainer {
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+
+            #folderText {
+                transition: color 0.3s ease;
+            }
+
+            #folderImage:hover + #folderText {
+                color: #ff8800;
+                transition: color 0.3s ease;
+            }

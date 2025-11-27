@@ -1,0 +1,98 @@
+.orange-48 {
+    font-size: 48px;
+    font-family: 'Ubuntu', sans-serif;
+
+    color: #ff8800;
+    -webkit-text-stroke: 1px #925800;
+}
+
+.orange-32 {
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif;
+
+    color: #ff8800;
+    -webkit-text-stroke: 1px #925800;
+}
+
+.orange-24 {
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+
+    color: #ff8800;
+}
+
+
+
+.yellow-48 {
+    font-size: 48px;
+    font-family: 'Ubuntu', sans-serif;
+
+    color: #ffc400;
+    -webkit-text-stroke: 1px #887400;
+}
+
+.yellow-32 {
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif;
+
+    color: #ffc400;
+    -webkit-text-stroke: 1px #887400;
+}
+
+.yellow-24 {
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+
+    color: #ffc400;
+}
+
+
+
+.white-48 {
+    font-size: 48px;
+    font-family: 'Ubuntu', sans-serif;
+
+    color: #ffffff;
+    -webkit-text-stroke: 1px #1f1f1f;
+}
+
+.white-32 {
+    font-size: 32px;
+    font-family: 'Ubuntu', sans-serif;
+
+    color: #ffffff;
+    -webkit-text-stroke: 1px #1f1f1f;
+}
+
+.white-24 {
+    font-size: 24px;
+    font-family: 'Ubuntu', sans-serif;
+
+    color: #ffffff;
+}
+
+
+
+.large-dynamic-icon {
+    pointer-events: all;
+
+    width: 128px;
+    height: 128px;
+
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.large-dynamic-icon:hover {
+    pointer-events: all;
+
+    width: 144px;
+    height: 144px;
+    transform: rotate(10deg);
+    
+    transition: transform 0.3s ease, width 0.3s ease, height 0.3s ease;
+}
+
+.medium-static-icon {
+    width: 96px;
+    height: 96px;
+}

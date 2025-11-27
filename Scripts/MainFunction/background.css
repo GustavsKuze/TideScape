@@ -1,0 +1,10 @@
+body {
+    position: relative;
+
+    background-color: #111111;
+
+    /* Make a gridlike pattern */
+    background-image: radial-gradient(circle, #1e1c19, 5px, transparent 5px);
+    background-size: 80px 80px;
+    background-repeat: repeat;
+}

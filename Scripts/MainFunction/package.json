@@ -1,0 +1,19 @@
+{
+  "name": "timescape",
+  "version": "1.0.0",
+  "description": "A realtime wallpaper engine",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "keywords": [
+    "Electron",
+    "desktop",
+    "application"
+  ],
+  "author": "Gustavs Kuze",
+  "license": "",
+  "devDependencies": {
+    "electron": "^39.2.3"
+  }
+}
